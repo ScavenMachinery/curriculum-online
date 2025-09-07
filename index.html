@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Federico Panopio - Curriculum</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -84,22 +83,6 @@ End Sub
         <img src="immagini/vba.png" alt="VBA">
         <img src="immagini/streamlit logo.png" alt="Streamlit">
       </div>
-      <h2>Hard Skills</h2>
-      <ul>
-        <li>Advanced Excel (Pivot, Macro, Power Query)</li>
-        <li>VBA basics</li>
-        <li>Python & Pandas data analysis</li>
-        <li>Data visualization: Matplotlib, Plotly</li>
-        <li>Languages: English B2, Spanish A2</li>
-      </ul>
-      <h2>Soft Skills</h2>
-      <ul>
-        <li>Teamwork, Proactive, Fast learner, Hands-on approach</li>
-      </ul>
-      <h2>Other Skills</h2>
-      <ul>
-        <li>Basic electronics, Arduino coding, Soldering</li>
-      </ul>
     </div>
 
     <!-- Formazione -->
@@ -126,11 +109,25 @@ End Sub
         <img src="immagini/tesi7.png">
         <img src="immagini/tesi8.png">
         <img src="immagini/tesi9.png">
-        <!-- e così via per tutte le immagini della tesi -->
       </div>
     </div>
 
   </div>
+
+  <!-- Script per interattività -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      const selected = document.getElementById(sectionId);
+      if (selected) selected.style.display = 'block';
+    }
+
+    // Mostra di default la sezione About Me
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('about');
+    });
+  </script>
 
 </body>
 </html>

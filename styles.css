@@ -38,6 +38,7 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+  text-align: left;
 }
 
 .sidebar button:hover {
@@ -54,6 +55,7 @@ body {
 /* Sezioni */
 .section {
   margin-bottom: 40px;
+  display: none; /* Nasconde tutte le sezioni all’avvio */
 }
 
 /* Titoli */
