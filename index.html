@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Federico Panopio — CV</title>
+  <meta name="description" content="CV e portfolio di Nome Cognome: ruolo, competenze, esperienze e progetti." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <!-- Open Graph per anteprima sui social -->
+  <meta property="og:title" content="Nome Cognome — CV" />
+  <meta property="og:description" content="Data analyst / [ruolo]." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <!-- Schema.org Person (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Nome Cognome",
+    "jobTitle":"Data Analyst",
+    "url":"https://tuodominio.vercel.app",
+    "sameAs":["https://www.linkedin.com/in/tuo-username","https://github.com/tuo-username","mailto:tuemail@example.com"]
+  }
+  </script>
+</head>
+<body>
+  <header class="container">
+    <img class="avatar" src="assets/foto.jpg" alt="Foto profilo">
+    <div>
+      <h1>Nome Cognome</h1>
+      <p>Data Analyst · Amazon marketplace · SQL · Python · JS</p>
+      <nav>
+        <a href="#competenze">Competenze</a>
+        <a href="#esperienze">Esperienze</a>
+        <a href="#progetti">Progetti</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="competenze">
+      <h2>Competenze</h2>
+      <ul class="tags">
+        <li>Excel/PowerQuery</li><li>SQL</li><li>Python</li><li>JavaScript</li><li>Amazon Seller Central</li>
+      </ul>
+    </section>
+
+    <section id="esperienze">
+      <h2>Esperienze</h2>
+      <article>
+        <h3>Data Analyst — [Azienda]</h3>
+        <p class="meta">2023–oggi · Milano · Consulenza eCommerce Amazon</p>
+        <ul>
+          <li>Pulizia dati e KPI sell-in/sell-out</li>
+          <li>Dashboard e raccomandazioni pricing</li>
+        </ul>
+      </article>
+      <!-- Aggiungi altre esperienze -->
+    </section>
+
+    <section id="progetti">
+      <h2>Progetti</h2>
+      <ul class="cards">
+        <li>
+          <h3>Analisi vendite Amazon</h3>
+          <p>Script per pulizia file Excel e calcolo KPI.</p>
+          <a class="btn" href="https://github.com/tuo-username/progetto" target="_blank" rel="noopener">Repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <ul>
+        <li>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/tuo-username">/in/tuo-username</a></li>
+      </ul>
+      <a class="btn" href="assets/CV_NomeCognome.pdf" download>Scarica PDF</a>
+    </section>
+  </main>
+
+  <footer class="container small">
+    © <span id="year"></span> Nome Cognome
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
