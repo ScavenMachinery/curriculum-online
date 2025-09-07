@@ -1,89 +1,130 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Federico Panopio — CV</title>
-  <meta name="description" content="CV e portfolio di Nome Cognome: ruolo, competenze, esperienze e progetti." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.ico" />
-  <!-- Open Graph per anteprima sui social -->
-  <meta property="og:title" content="Nome Cognome — CV" />
-  <meta property="og:description" content="Data analyst / [ruolo]." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.jpg" />
-  <!-- Schema.org Person (SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Nome Cognome",
-    "jobTitle":"Data Analyst",
-    "url":"https://tuodominio.vercel.app",
-    "sameAs":["https://www.linkedin.com/in/tuo-username","https://github.com/tuo-username","mailto:tuemail@example.com"]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federico Panopio - Curriculum</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="container">
-    <img class="avatar" src="assets/foto.jpg" alt="Foto profilo">
-    <div>
-      <h1>Nome Cognome</h1>
-      <p>Data Analyst · Amazon marketplace · SQL · Python · JS</p>
-      <nav>
-        <a href="#competenze">Competenze</a>
-        <a href="#esperienze">Esperienze</a>
-        <a href="#progetti">Progetti</a>
-        <a href="#contatti">Contatti</a>
-      </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="immagini/profilo.png" alt="Profilo" class="profile-img">
+    <p>- Email: panopiofederico@gmail.com</p>
+    <p>- LinkedIn: www.linkedin.com/in/federico-panopio-aa6974247</p>
+    <p>- GitHub: https://github.com/ScavenMachinery</p>
+
+    <ul>
+      <li><button onclick="showSection('about')">About me</button></li>
+      <li><button onclick="showSection('experience')">Esperienza</button></li>
+      <li><button onclick="showSection('projects')">Progetti</button></li>
+      <li><button onclick="showSection('skills')">Competenze</button></li>
+      <li><button onclick="showSection('education')">Formazione</button></li>
+      <li><button onclick="showSection('thesis')">Tesi</button></li>
+    </ul>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- About me -->
+    <div id="about" class="section">
+      <h1>About Me</h1>
+      <p>Hi, my name is Federico, I am a technology enthusiast...</p>
+      <h2>Experience and Interests</h2>
+      <p>Currently, I am delving into the world of data...</p>
+      <img src="immagini/Coursera Google Data analyst certificate.png" alt="Certificate">
     </div>
-  </header>
 
-  <main class="container">
-    <section id="competenze">
-      <h2>Competenze</h2>
-      <ul class="tags">
-        <li>Excel/PowerQuery</li><li>SQL</li><li>Python</li><li>JavaScript</li><li>Amazon Seller Central</li>
-      </ul>
-    </section>
-
-    <section id="esperienze">
-      <h2>Esperienze</h2>
-      <article>
-        <h3>Data Analyst — [Azienda]</h3>
-        <p class="meta">2023–oggi · Milano · Consulenza eCommerce Amazon</p>
-        <ul>
-          <li>Pulizia dati e KPI sell-in/sell-out</li>
-          <li>Dashboard e raccomandazioni pricing</li>
-        </ul>
-      </article>
-      <!-- Aggiungi altre esperienze -->
-    </section>
-
-    <section id="progetti">
-      <h2>Progetti</h2>
-      <ul class="cards">
-        <li>
-          <h3>Analisi vendite Amazon</h3>
-          <p>Script per pulizia file Excel e calcolo KPI.</p>
-          <a class="btn" href="https://github.com/tuo-username/progetto" target="_blank" rel="noopener">Repo</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contatti">
-      <h2>Contatti</h2>
+    <!-- Esperienza Lavorativa -->
+    <div id="experience" class="section">
+      <h1>Esperienza Lavorativa</h1>
+      <img src="immagini/logo.bettershop.png" alt="Bettershop">
       <ul>
-        <li>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/tuo-username">/in/tuo-username</a></li>
+        <li><strong>Bettershop SRL</strong> - Data Analyst (01/08/2023 - current)</li>
+        <li>Market analysis, Automation workflows, Reporting, Dashboards</li>
+        <li><strong>Bettershop SRL</strong> - Internship Junior Accountant (01/02/2023 - 01/08/2023)</li>
+        <li>Cash flow, Reporting, Accounting tasks</li>
       </ul>
-      <a class="btn" href="assets/CV_NomeCognome.pdf" download>Scarica PDF</a>
-    </section>
-  </main>
+      <hr>
+      <img src="immagini/L&C.jpeg" width="100">
+      <p>Language & Consulting - Commercial internship (01/10/2021 - 01/03/2022)</p>
+      <hr>
+      <p>Caffetteria Dali - Bartender part-time (2018-2023)</p>
+    </div>
 
-  <footer class="container small">
-    © <span id="year"></span> Nome Cognome
-  </footer>
-  <script src="script.js"></script>
+    <!-- Progetti -->
+    <div id="projects" class="section">
+      <h1>Progetti</h1>
+      <h2>Power Automate invoice workflow automation</h2>
+      <p>Extracting Purchase orders from Amazon reports...</p>
+      <img src="immagini/power automate screenshot.png" alt="Power Automate">
+      <hr>
+      <h2>VBA Macro powered spreadsheets</h2>
+      <pre><code class="language-vba">
+Sub AutoGoalSeek()
+    ' Example code
+End Sub
+      </code></pre>
+      <hr>
+      <h2>Market Analysis Data visualization</h2>
+      <p>Web app developed with Python, Streamlit, Google Sheets API...</p>
+      <img src="immagini/data viz.png" alt="Data Viz">
+    </div>
+
+    <!-- Competenze -->
+    <div id="skills" class="section">
+      <h1>Competenze</h1>
+      <div class="skills-grid">
+        <img src="immagini/Excel-Logo.png" alt="Excel">
+        <img src="immagini/python logo.jpg" alt="Python">
+        <img src="immagini/Pandas_logo.png" alt="Pandas">
+        <img src="immagini/vba.png" alt="VBA">
+        <img src="immagini/streamlit logo.png" alt="Streamlit">
+      </div>
+      <h2>Hard Skills</h2>
+      <ul>
+        <li>Advanced Excel (Pivot, Macro, Power Query)</li>
+        <li>VBA basics</li>
+        <li>Python & Pandas data analysis</li>
+        <li>Data visualization: Matplotlib, Plotly</li>
+        <li>Languages: English B2, Spanish A2</li>
+      </ul>
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Teamwork, Proactive, Fast learner, Hands-on approach</li>
+      </ul>
+      <h2>Other Skills</h2>
+      <ul>
+        <li>Basic electronics, Arduino coding, Soldering</li>
+      </ul>
+    </div>
+
+    <!-- Formazione -->
+    <div id="education" class="section">
+      <h1>Formazione</h1>
+      <div class="education-grid">
+        <div><img src="immagini/unibs.jpg"><p>Laurea in Economia e Gestione Aziendale</p></div>
+        <div><img src="immagini/lunardi.jpg"><p>Diploma tecnico</p></div>
+        <div><img src="immagini/arcades del cid.jpg"><p>Stage linguistico</p></div>
+      </div>
+    </div>
+
+    <!-- Tesi -->
+    <div id="thesis" class="section">
+      <h1>Tesi</h1>
+      <p>Corporate Strategies Against Supply Chain Disruptions: The Semiconductor Industry Case</p>
+      <div class="thesis-images">
+        <img src="immagini/tesi1.png">
+        <img src="immagini/tesi2.png">
+        <img src="immagini/tesi3.png">
+        <!-- e così via per tutte le immagini della tesi -->
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
